@@ -11,6 +11,21 @@ Requirements
 There are no any dependencies for this package. This package compatible
 with Express.js v4 or v5 and required Node.js v14+. Implemented on ES7.
 
+Installation
+------------
+
+NPM:
+
+```sh
+npm install express-throwable
+```
+
+PNPM:
+
+```sh
+pnpm add express-throwable
+```
+
 Usage
 -----
 
@@ -78,11 +93,11 @@ This package provides only three middlewares:
 ### `throwable(async (request, response) => { ... })`
 Use this to wrap you async handlers.
 
-### `finalize((request, response) => { ... })`
+### `finalize(async (request, response) => { ... })`
 Use this for your finally code to release resources, and to execute an error handlers.
 It must be last middleware attached to your express application.
 
-### `errorHandler((error, request, response) => { ... })`
+### `errorHandler(async (error, request, response) => { ... })`
 Use this to process an errors. Error handlers will called after callback,
 which you can pass into `finalize()`.
 

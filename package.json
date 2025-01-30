@@ -1,9 +1,10 @@
 {
   "name": "express-throwable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middlewares for async handlers and error handlers for Express.js framework.",
-  "main": "src/index.js",
   "type": "module",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
   },
   "keywords": [
@@ -12,6 +13,9 @@
   ],
   "author": "h41ku <h41ku.c0de@ya.ru>",
   "license": "MIT",
+  "dependencies": {
+  },
   "devDependencies": {
+    "@types/express": "^5.0.0"
   }
 }
